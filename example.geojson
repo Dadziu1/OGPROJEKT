@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.0122, 52.2297]
+      },
+      "properties": {
+        "name": "Warszawa"
+      }
+    }
+  ]
+}
+

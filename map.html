@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4b56aa4ccb57236c6909112bb6b55c65 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4b56aa4ccb57236c6909112bb6b55c65" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4b56aa4ccb57236c6909112bb6b55c65 = L.map(
+                "map_4b56aa4ccb57236c6909112bb6b55c65",
+                {
+                    center: [49.9463655, 21.8358282],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08bb6d1999674f1b668a412a789dcf27 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_08bb6d1999674f1b668a412a789dcf27.addTo(map_4b56aa4ccb57236c6909112bb6b55c65);
+        
+    
+            var marker_0eb6aa4c25bd2b56879ab023241a6da0 = L.marker(
+                [49.9463655, 21.8358282],
+                {}
+            ).addTo(map_4b56aa4ccb57236c6909112bb6b55c65);
+        
+    
+        var popup_ede825986aa619ace803866caf604f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9c367de63753e71b9ee5f5ec6f5a7a8 = $(`<div id="html_e9c367de63753e71b9ee5f5ec6f5a7a8" style="width: 100.0%; height: 100.0%;">Czudec</div>`)[0];
+                popup_ede825986aa619ace803866caf604f23.setContent(html_e9c367de63753e71b9ee5f5ec6f5a7a8);
+            
+        
+
+        marker_0eb6aa4c25bd2b56879ab023241a6da0.bindPopup(popup_ede825986aa619ace803866caf604f23)
+        ;
+
+        
+    
+    
+            marker_0eb6aa4c25bd2b56879ab023241a6da0.bindTooltip(
+                `<div>
+                     Kliknij, aby zobaczyć
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_08bb6d1999674f1b668a412a789dcf27.addTo(map_4b56aa4ccb57236c6909112bb6b55c65);
+        
+    
+
+        function geo_json_16a35dce5ad815f8627f173f9cf85195_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_16a35dce5ad815f8627f173f9cf85195 = L.geoJson(null, {
+                onEachFeature: geo_json_16a35dce5ad815f8627f173f9cf85195_onEachFeature,
+            
+        });
+
+        function geo_json_16a35dce5ad815f8627f173f9cf85195_add (data) {
+            geo_json_16a35dce5ad815f8627f173f9cf85195
+                .addData(data);
+        }
+            geo_json_16a35dce5ad815f8627f173f9cf85195_add({"features": [{"geometry": {"coordinates": [21.0122, 52.2297], "type": "Point"}, "properties": {"name": "Warszawa"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_16a35dce5ad815f8627f173f9cf85195.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_16a35dce5ad815f8627f173f9cf85195.addTo(map_4b56aa4ccb57236c6909112bb6b55c65);
+        
+</script>
+</html>
